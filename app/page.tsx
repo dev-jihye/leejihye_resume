@@ -78,7 +78,7 @@ export default function Home() {
             projectDescription="연구 대상자의 구강 문진 데이터를 수집하고 리포트를 제공하며 결과에
               따른 교육 콘텐츠를 제공하는 웹 어플리케이션 개발"
             contribution="100%"
-            skills="React, Typescript, Sass, react-query, jotai"
+            skills="React, Typescript, Sass, react-query"
             features="소셜 로그인(카카오, 네이버, 구글) 연동하기, 구강 문진표
             작성하기, 리포트 결과보기, 교육 콘텐츠 시청하기"
           >
@@ -102,8 +102,7 @@ export default function Home() {
             startedAt="2023. 9"
             projectDescription="토마스톤 제품 및 서비스에 대한 홍보 사이트 개발"
             contribution="100%"
-            skills="React, Typescript, Sass, react-query, jotai"
-            features="React, Next.js, Typescript, Tailwindcss"
+            skills="React, Next.js, Typescript, Tailwindcss"
           >
             <p className="mt-3 text-[15px] sm:text-base">
               • Search Engine Optimization 적용을 위해 Server Side Rendering이
