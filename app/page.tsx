@@ -129,7 +129,7 @@ export default function Home() {
             companyName="해래"
             role="프론트엔드"
             startedAt="2020. 12"
-            endedAt="2021. 8"
+            endedAt="2021. 8 | 경영악화로 인한 권고사직"
             companyDescription="커스텀 원단 제품 및 관련 디자인 상품을 제작하고 판매하는 플랫폼"
           />
           <div className="ml-4">
