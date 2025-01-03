@@ -1,6 +1,5 @@
 type TCompanyInfo = {
   companyName: string;
-  role: string;
   startedAt: string;
   endedAt: string;
   companyDescription: string;
@@ -8,23 +7,25 @@ type TCompanyInfo = {
 
 export default function SectionCompanyInfo({
   companyName,
-  role,
   startedAt,
   endedAt,
   companyDescription,
 }: TCompanyInfo) {
   return (
     <div>
+      <div className="flex items-center">
+        <div className="border-l-4 h-6"></div>
+        <p className="ml-3 text-xs sm:text-base text-gray-400">
+          {startedAt} - {endedAt}
+        </p>
+      </div>
       <h3>
-        <span className="block sm:inline-block text-xl sm:text-3xl font-bold">
+        <span className="block sm:inline-block text-xl font-bold mt-6">
           {companyName}
-        </span>
-        <span className="ml-0 sm:ml-3 text-xs sm:text-base text-gray-600">
-          {role} ({startedAt} ~ {endedAt})
         </span>
       </h3>
 
-      <p className="text-sm sm:text-[15px] text-gray-500 mt-2">
+      <p className="text-sm sm:text-[15px] text-zinc-500 mt-3">
         {companyDescription}
       </p>
       {/* <div className="ml-4 mt-8">

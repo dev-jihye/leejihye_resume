@@ -4,7 +4,7 @@ type TSectionTitle = {
 
 export default function SectionTitle({ title }: TSectionTitle) {
   return (
-    <h2 className="text-3xl sm:text-[40px] font-bold text-teal-600 mt-20 sm:mt-28">
+    <h2 className="mt-20 sm:mt-32 flex items-center text-xl sm:text-2xl font-bold text-teal-600">
       {title}
     </h2>
   );

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 type TCompanyProject = {
   projectName: string;
@@ -22,36 +22,28 @@ export default function SectionCompanyProject({
   children,
 }: TCompanyProject) {
   return (
-    <div className="ml-4 mt-8">
+    <div className="mt-8 px-6 py-7 border rounded-2xl">
       <div>
-        <span className="block sm:inline-block text-lg sm:text-2xl font-semibold">
+        {endedAt && (
+          <p className="text-xs sm:text-base text-gray-400">
+            {startedAt} - {endedAt}
+          </p>
+        )}
+        <span className="mt-3 block sm:inline-block text-lg font-semibold">
           {projectName}
         </span>
-        {startedAt && (
-          <span className="ml-0 sm:ml-3 text-xs sm:text-base text-gray-600">
-            {startedAt}
-          </span>
-        )}
-        {endedAt && (
-          <span className="ml-1 text-xs sm:text-base text-gray-600">~</span>
-        )}
-        {endedAt && (
-          <span className="ml-1 text-xs sm:text-base text-gray-600">
-            {endedAt}
-          </span>
-        )}
       </div>
-      <p className="text-sm sm:text-[15px] text-gray-500 mt-2">
+      <p className="text-sm sm:text-[15px] text-gray-500 mt-3 leading-6">
         {projectDescription}
       </p>
       {contribution && (
-        <p className="text-[15px] sm:text-base mt-3">기여도: {contribution}</p>
+        <p className="text-[15px] sm:text-base mt-5">기여도: {contribution}</p>
       )}
       {skills && (
-        <p className="text-[15px] sm:text-base">사용 기술: {skills}</p>
+        <p className="text-[15px] sm:text-base mt-1">사용 기술: {skills}</p>
       )}
       {features && (
-        <p className="text-[15px] sm:text-base">주요 기능: {features}</p>
+        <p className="text-[15px] sm:text-base mt-1">주요 기능: {features}</p>
       )}
       {children}
     </div>
