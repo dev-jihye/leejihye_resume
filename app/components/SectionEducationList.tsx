@@ -25,9 +25,9 @@ export default function SectionEducationList({
         <p className="mt-3 text-[15px]">{schoolName}</p>
       </div>
       <div className="w-2/3">
-        <p className="text-zinc-500 text-[15px] sm:text-[16px] leading-7">
+        <div className="text-zinc-500 text-[15px] sm:text-[16px] leading-7">
           {children}
-        </p>
+        </div>
       </div>
     </div>
   );
